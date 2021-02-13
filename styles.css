@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 :root {
     --clock-size: 400px;
 }
@@ -8,6 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 header {
     text-align: center;
@@ -16,6 +18,7 @@ header {
     flex-grow: 1;
     flex-basis: 0;
     width: var(--clock-size);
+    color: white;
 }
 .analog {
     width: var(--clock-size);
@@ -24,7 +27,7 @@ header {
     border-radius: 50%;
     border: 1px solid black;
     position: relative;
-    background: white url('./pic.jpg') no-repeat center;
+    background: linear-gradient(90deg,#bedfdc 0%, #bedfdc 50%, #f9b8b6 50%, #f9b8b6 100%) no-repeat center;
     background-size: cover;
 }
 [class^='no'], [class$='-div'] {

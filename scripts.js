@@ -28,7 +28,7 @@ function setTimes(){
 function setAnalog(){
     let secondsDeg = seconds*6
     let minutesDeg = minutes*6 + seconds/10
-    let hoursDeg = (hours%12)*30 + minutes/2 + seconds/10
+    let hoursDeg = (hours%12)*30 + minutes/2
     secondHand.style.transform = 'rotate(' + secondsDeg + 'deg)'
     minuteHand.style.transform = 'rotate(' + minutesDeg + 'deg)'
     hourHand.style.transform = 'rotate(' + hoursDeg + 'deg)'
