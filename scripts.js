@@ -12,8 +12,17 @@ var minutes = date.getMinutes()
 var hours = date.getHours()
 var apm = (hours<12)? 'AM' : 'PM'
 
-for(let i=1;i<12;i++)
-    document.querySelector('.no'+i).style.transform = 'rotate(' + (i*30) + 'deg)'
+for(let i=1;i<=12;i++){
+    let no = document.querySelector('.no'+i)
+    no.style.transform = 'rotate(' + (i*30) + 'deg)'
+    for(let j=(i-1)*5+1;j<=(i-1)*5+4;j++){
+        let div = document.createElement('div')
+        div.innerHTML = '|'
+        div.classList.add('line')
+        div.style.transform = 'rotate(' + (j*6) + 'deg)'
+        no.insertAdjacentElement('beforebegin', div)
+    }
+}
 
 setTimes()
 
