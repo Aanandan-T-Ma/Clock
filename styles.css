@@ -100,3 +100,8 @@ header {
     font-weight: bold;
     font-size: 10px;
 }
+.hours, .minutes, .seconds, .apm {
+    background-color: rgb(255, 255, 255, .2);
+    padding: 5px;
+    border-radius: 10px;
+}
